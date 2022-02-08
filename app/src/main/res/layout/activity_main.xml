@@ -10,11 +10,72 @@
         android:id="@+id/tvMainHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Dairy Mantra : Your Virtual Dairy Manager"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonTotalAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Animal"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <Button
+        android:id="@+id/ButtonOnHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Heat"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <Button
+        android:id="@+id/ButtonDailyRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Record"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <Button
+        android:id="@+id/ButtonReports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reports"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/tvHerdInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:text="Herd Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainHeading" />
+
+    <TextView
+        android:id="@+id/tvTotalAnimalsNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:background="@drawable/textview_circle"
+        android:gravity="center"
+        tools:text="23" />
+
+    <TextView
+        android:id="@+id/tvAnimalsOnHeat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:background="@drawable/textview_circle"
+        android:gravity="center"
+        tools:text="2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
