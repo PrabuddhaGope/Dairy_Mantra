@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dairy_Mantra">
         <activity
+            android:name=".FourthScreen_HeatDetection"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdScreen_AnimalRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".SecondScreen_BasicDetail"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
