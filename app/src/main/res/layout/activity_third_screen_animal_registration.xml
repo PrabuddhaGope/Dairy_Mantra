@@ -48,6 +48,20 @@
         app:layout_constraintStart_toStartOf="@+id/StageOfAnimal"
         app:layout_constraintTop_toBottomOf="@+id/StageOfAnimal" />
 
+    <TextView
+        android:id="@+id/animalGirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Animal girth"
+        app:layout_constraintEnd_toEndOf="@+id/StageOfAnimal"
+        app:layout_constraintStart_toStartOf="@+id/StageOfAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/StageOfAnimal" />
+
     <Spinner
         android:id="@+id/Stage"
         android:layout_width="150dp"

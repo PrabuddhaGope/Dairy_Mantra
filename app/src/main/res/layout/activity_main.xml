@@ -64,11 +64,12 @@
         android:id="@+id/ButtonDailyRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#FFE6CC"
         android:text="Daily Record"
         android:textColor="#8B000000"
         app:layout_constraintEnd_toEndOf="@+id/ButtonTotalAnimal"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/ButtonTotalAnimal"
         app:layout_constraintTop_toBottomOf="@+id/ButtonTotalAnimal"
         app:strokeColor="#FFC107"
@@ -113,95 +114,121 @@
         tools:text="23" />
 
     <TextView
-        android:id="@+id/tvDailyRevenueAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="436dp"
-        tools:text="3000" />
-
-    <TextView
-        android:id="@+id/tvMonthlyRevenueAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:autoText="false"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="446dp"
-        tools:text="40000" />
-
-    <TextView
         android:id="@+id/tvRevenueLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
         android:text="Revenue"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDailyLabel" />
+
+    <TextView
+        android:id="@+id/tvDailyRevenueAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRevenueLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvDailyLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvRevenueLabel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="3000" />
 
     <TextView
         android:id="@+id/tvExpenditureLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
         android:text="Expenditure"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="474dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRevenueLabel" />
+
+    <TextView
+        android:id="@+id/tvMonthlyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:text="Monthly"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDailyLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvDailyLabel"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tvDailyExpenditureAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="474dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExpenditureLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvDailyRevenueAmount"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyRevenueAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvExpenditureLabel"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="2000" />
 
     <TextView
         android:id="@+id/tvDailyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="20dp"
         android:text="Daily"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenseReportHeading" />
 
     <TextView
         android:id="@+id/tvMonthlyExpenditureAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="493dp"
+        android:layout_marginStart="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDailyExpenditureAmount"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyExpenditureAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvDailyExpenditureAmount"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="20000" />
 
     <TextView
-        android:id="@+id/tvMonthlyLabel"
+        android:id="@+id/tvMonthlyRevenueAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monthly"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="403dp" />
+        android:layout_marginStart="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDailyRevenueAmount"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyRevenueAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvDailyRevenueAmount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:autoText="false"
+        tools:text="40000" />
 
     <Button
         android:id="@+id/ButtonAddAnimal"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:text="Add Animal"
         android:textSize="12sp"
         app:icon="@drawable/ic_baseline_add_24"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonDailyAlerts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ButtonDailyAlerts" />
 
     <Button
         android:id="@+id/ButtonDailyAlerts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:text="Daily Alerts"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenditureLabel" />
 
     <TextView
         android:id="@+id/tvExpenseReportHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="44dp"
         android:text="Expense Report"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18sp"
