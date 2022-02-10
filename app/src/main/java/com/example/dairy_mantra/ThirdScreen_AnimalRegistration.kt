@@ -7,5 +7,7 @@ class ThirdScreen_AnimalRegistration : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third_screen_animal_registration)
+
+
     }
 }

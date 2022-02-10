@@ -7,22 +7,149 @@
     tools:context=".ThirdScreen_AnimalRegistration">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:background=""
+        android:padding="5dp"
+        android:text="Animal Stage"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/StageOfAnimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Stage of Animal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/AnimalGirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Animal girth"
+        app:layout_constraintEnd_toEndOf="@+id/StageOfAnimal"
+        app:layout_constraintStart_toStartOf="@+id/StageOfAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/StageOfAnimal" />
+
+    <Spinner
+        android:id="@+id/Stage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:entries="@array/Stage_of_animal"
+        app:layout_constraintBottom_toBottomOf="@+id/StageOfAnimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/StageOfAnimal" />
+
+    <EditText
+        android:id="@+id/AnimalGirthInput"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Girth"
+        app:layout_constraintBottom_toBottomOf="@+id/AnimalGirth"
+        app:layout_constraintEnd_toEndOf="@+id/Stage"
+        app:layout_constraintStart_toStartOf="@+id/Stage"
+        app:layout_constraintTop_toTopOf="@+id/AnimalGirth" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/BreedingInfo"
+        android:layout_width="137dp"
+        android:layout_height="44dp"
+        android:text="Breeding Information Pregnancy Status"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="582dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dairy_Mantra</string>
+    <string-array name="Stage_of_animal">
+        <item>Calf</item>
+        <item>Heifer</item>
+        <item>Adult</item>
+    </string-array>
+
 </resources>
