@@ -67,11 +67,11 @@
         android:id="@+id/tvTotalAnimalsNumber"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/textview_circle"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/tvHerdInfo"
-        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteX="74dp"
         tools:text="23" />
 
     <TextView
