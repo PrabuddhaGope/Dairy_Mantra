@@ -6,4 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".SecondScreen_BasicDetail">
 
+    <TextView
+        android:id="@+id/tvAnimalRegistrationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Registration"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/tvAnimalPhotoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Photo"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/tvAnimalNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/tvInsuranceTagLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insurance Tag"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/tvTagNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag number"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <TextView
+        android:id="@+id/tvAnimalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="116dp"
+        tools:text="Shayma" />
+
+    <TextView
+        android:id="@+id/tvInsuranceTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="158dp"
+        tools:text="xxxxxx" />
+
+    <TextView
+        android:id="@+id/tvTagNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="190dp"
+        tools:text="yyyyyy" />
+
+    <TextView
+        android:id="@+id/tvAnimalTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="232dp"
+        tools:text="Animal Type" />
+
+    <TextView
+        android:id="@+id/tvBreedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="270dp"
+        tools:text="Breed" />
+
+    <TextView
+        android:id="@+id/tvAnimalGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="318dp"
+        tools:text="Animal Gender" />
+
+    <TextView
+        android:id="@+id/tvDateOfBirthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="358dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
