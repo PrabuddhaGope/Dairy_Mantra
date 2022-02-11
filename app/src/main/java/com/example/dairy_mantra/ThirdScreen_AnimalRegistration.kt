@@ -8,6 +8,5 @@ class ThirdScreen_AnimalRegistration : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third_screen_animal_registration)
 
-
     }
 }

@@ -5,5 +5,13 @@
         <item>Heifer</item>
         <item>Adult</item>
     </string-array>
+    <string-array name="Pregnancy_status">
+        <item>Pregnant</item>
+        <item>Non-Pregnant</item>
+    </string-array>
+    <string-array name="Milking_status">
+        <item>Milking</item>
+        <item>Dry</item>
+    </string-array>
 
 </resources>

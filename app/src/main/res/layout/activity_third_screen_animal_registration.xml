@@ -13,22 +13,23 @@
         android:layout_marginTop="32dp"
         android:background=""
         android:padding="5dp"
-        android:text="Animal Stage"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Animal Stage" />
 
     <TextView
         android:id="@+id/StageOfAnimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_view"
         android:padding="5dp"
         android:paddingStart="20dp"
+
         android:paddingEnd="20dp"
         android:text="Stage of Animal"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,25 +39,11 @@
         android:id="@+id/AnimalGirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_view"
         android:padding="5dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:text="Animal girth"
-        app:layout_constraintEnd_toEndOf="@+id/StageOfAnimal"
-        app:layout_constraintStart_toStartOf="@+id/StageOfAnimal"
-        app:layout_constraintTop_toBottomOf="@+id/StageOfAnimal" />
-
-    <TextView
-        android:id="@+id/animalGirth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_corner_view"
-        android:padding="5dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
         android:text="Animal girth"
         app:layout_constraintEnd_toEndOf="@+id/StageOfAnimal"
         app:layout_constraintStart_toStartOf="@+id/StageOfAnimal"
@@ -64,106 +51,193 @@
 
     <Spinner
         android:id="@+id/Stage"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:entries="@array/Stage_of_animal"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/StageOfAnimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/StageOfAnimal" />
 
     <EditText
         android:id="@+id/AnimalGirthInput"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Girth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Girth"
         app:layout_constraintBottom_toBottomOf="@+id/AnimalGirth"
         app:layout_constraintEnd_toEndOf="@+id/Stage"
         app:layout_constraintStart_toStartOf="@+id/Stage"
         app:layout_constraintTop_toTopOf="@+id/AnimalGirth" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/AnimalLength"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_view"
         android:padding="5dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="Animal Length"
+        app:layout_constraintEnd_toEndOf="@+id/AnimalGirth"
+        app:layout_constraintStart_toStartOf="@+id/AnimalGirth"
+        app:layout_constraintTop_toBottomOf="@+id/AnimalGirth" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/AnimalWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_corner_view"
         android:padding="5dp"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="236dp" />
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="Animal Weight"
+        app:layout_constraintEnd_toEndOf="@+id/AnimalLength"
+        app:layout_constraintStart_toStartOf="@+id/AnimalLength"
+        app:layout_constraintTop_toBottomOf="@+id/AnimalLength" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:id="@+id/Length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Length"
+        app:layout_constraintBottom_toBottomOf="@+id/AnimalLength"
+        app:layout_constraintEnd_toEndOf="@+id/AnimalGirthInput"
+        app:layout_constraintStart_toStartOf="@+id/AnimalGirthInput"
+        app:layout_constraintTop_toTopOf="@+id/AnimalLength" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/Pregnancy"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="323dp" />
+        android:minHeight="48dp"
+        android:entries="@array/Pregnancy_status"
+        app:layout_constraintBottom_toBottomOf="@+id/BreedingInfo"
+        app:layout_constraintEnd_toEndOf="@+id/Weight"
+        app:layout_constraintStart_toStartOf="@+id/Weight"
+        app:layout_constraintTop_toTopOf="@+id/BreedingInfo" />
 
     <TextView
         android:id="@+id/BreedingInfo"
         android:layout_width="137dp"
         android:layout_height="44dp"
+        android:layout_marginTop="30dp"
         android:text="Breeding Information Pregnancy Status"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="303dp" />
+        app:layout_constraintEnd_toEndOf="@+id/AnimalWeight"
+        app:layout_constraintStart_toStartOf="@+id/AnimalWeight"
+        app:layout_constraintTop_toBottomOf="@+id/AnimalWeight" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:ems="5"
+        android:inputType="date"
+        android:minHeight="48dp"
         android:text="Name"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/CalvingDate"
+        app:layout_constraintEnd_toEndOf="@+id/Pregnancy"
+        app:layout_constraintStart_toStartOf="@+id/Pregnancy"
+        app:layout_constraintTop_toTopOf="@+id/CalvingDate" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:ems="5"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Name"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/AI"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/AI" />
 
     <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="409dp"
+        android:id="@+id/LactationNumber"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="523dp" />
+        android:contentDescription="Number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Lactation"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toTopOf="@+id/Lactation" />
 
     <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="409dp"
+        android:id="@+id/MilkingStatus"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="582dp" />
+        android:minHeight="48dp"
+        android:entries="@array/Milking_status"
+        app:layout_constraintBottom_toBottomOf="@+id/CurrentMilking"
+        app:layout_constraintEnd_toEndOf="@+id/LactationNumber"
+        app:layout_constraintStart_toStartOf="@+id/LactationNumber"
+        app:layout_constraintTop_toTopOf="@+id/CurrentMilking" />
+
+    <TextView
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        app:layout_constraintBottom_toBottomOf="@+id/AnimalWeight"
+        app:layout_constraintEnd_toEndOf="@+id/Length"
+        app:layout_constraintStart_toStartOf="@+id/Length"
+        app:layout_constraintTop_toTopOf="@+id/AnimalWeight" />
+
+    <TextView
+        android:id="@+id/CalvingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Last Calving Date"
+        app:layout_constraintEnd_toEndOf="@+id/BreedingInfo"
+        app:layout_constraintStart_toStartOf="@+id/BreedingInfo"
+        app:layout_constraintTop_toBottomOf="@+id/BreedingInfo" />
+
+    <TextView
+        android:id="@+id/AI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Last Date of AI"
+        app:layout_constraintEnd_toEndOf="@+id/CalvingDate"
+        app:layout_constraintStart_toStartOf="@+id/CalvingDate"
+        app:layout_constraintTop_toBottomOf="@+id/CalvingDate" />
+
+    <TextView
+        android:id="@+id/Milking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Milking Status"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/AI"
+        app:layout_constraintStart_toStartOf="@+id/AI"
+        app:layout_constraintTop_toBottomOf="@+id/AI" />
+
+    <TextView
+        android:id="@+id/Lactation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Current Lactation number"
+        app:layout_constraintEnd_toEndOf="@+id/Milking"
+        app:layout_constraintStart_toStartOf="@+id/Milking"
+        app:layout_constraintTop_toBottomOf="@+id/Milking" />
+
+    <TextView
+        android:id="@+id/CurrentMilking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Current Milking Status"
+        app:layout_constraintEnd_toEndOf="@+id/Lactation"
+        app:layout_constraintStart_toStartOf="@+id/Lactation"
+        app:layout_constraintTop_toBottomOf="@+id/Lactation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
