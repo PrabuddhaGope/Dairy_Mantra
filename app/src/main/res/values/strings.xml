@@ -6,4 +6,9 @@
         <item>Adult</item>
     </string-array>
 
+    <string-array name="Animal_type">
+        <item>Cow</item>
+        <item>Buffalo</item>
+    </string-array>
+
 </resources>

@@ -10,96 +10,121 @@
         android:id="@+id/tvAnimalRegistrationHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
         android:text="Animal Registration"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvAnimalPhotoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
         android:text="Animal Photo"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalRegistrationHeading" />
 
     <TextView
         android:id="@+id/tvAnimalNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Animal Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalPhotoLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalPhotoLabel" />
 
     <TextView
         android:id="@+id/tvInsuranceTagLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Insurance Tag"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="151dp" />
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalNameLabel" />
 
     <TextView
         android:id="@+id/tvTagNumberLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Tag number"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintStart_toStartOf="@+id/tvInsuranceTagLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvInsuranceTagLabel" />
 
     <TextView
         android:id="@+id/tvAnimalName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="116dp"
+        android:layout_width="52dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAnimalNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvAnimalNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvAnimalNameLabel"
         tools:text="Shayma" />
 
     <TextView
         android:id="@+id/tvInsuranceTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="158dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvInsuranceTagLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalName"
+        app:layout_constraintTop_toTopOf="@+id/tvInsuranceTagLabel"
         tools:text="xxxxxx" />
 
     <TextView
         android:id="@+id/tvTagNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="190dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTagNumberLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvInsuranceTag"
+        app:layout_constraintTop_toTopOf="@+id/tvTagNumberLabel"
         tools:text="yyyyyy" />
 
     <TextView
         android:id="@+id/tvAnimalTypeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="232dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tvTagNumberLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvTagNumberLabel"
         tools:text="Animal Type" />
 
     <TextView
         android:id="@+id/tvBreedLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="270dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalTypeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalTypeLabel"
         tools:text="Breed" />
 
     <TextView
         android:id="@+id/tvAnimalGenderLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="318dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tvBreedLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvBreedLabel"
         tools:text="Animal Gender" />
 
     <TextView
         android:id="@+id/tvDateOfBirthLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Date of Birth"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="358dp" />
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalGenderLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalGenderLabel" />
+
+    <Spinner
+        android:id="@+id/spinnerAnimalTypeOptions"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAnimalTypeLabel"
+        app:layout_constraintStart_toStartOf="@+id/tvTagNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvAnimalTypeLabel" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
