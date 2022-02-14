@@ -19,31 +19,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/ButtonTotalAnimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#DAE8FC"
-        android:text="Total Animal"
-        android:textColor="#8B000000"
-        app:layout_constraintEnd_toEndOf="@+id/tvTotalAnimalsNumber"
-        app:layout_constraintStart_toStartOf="@+id/tvTotalAnimalsNumber"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalAnimalsNumber"
-        app:strokeColor="#3F51B5"
-        app:strokeWidth="1dp" />
-
-    <Button
         android:id="@+id/ButtonOnHeat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#D5E8D4"
         android:text="On Heat"
         android:textColor="#8B000000"
-        app:layout_constraintBottom_toBottomOf="@+id/ButtonTotalAnimal"
         app:layout_constraintEnd_toEndOf="@+id/tvAnimalsOnHeat"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/tvAnimalsOnHeat"
-        app:layout_constraintTop_toTopOf="@+id/ButtonTotalAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimalsOnHeat"
         app:strokeColor="#4CAF50"
         app:strokeWidth="1dp" />
 
@@ -64,12 +50,11 @@
         android:id="@+id/ButtonDailyRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#FFE6CC"
         android:text="Daily Record"
         android:textColor="#8B000000"
         app:layout_constraintEnd_toEndOf="@+id/ButtonTotalAnimal"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/ButtonTotalAnimal"
         app:layout_constraintTop_toBottomOf="@+id/ButtonTotalAnimal"
         app:strokeColor="#FFC107"
@@ -235,5 +220,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonDailyRecord" />
+
+    <Button
+        android:id="@+id/ButtonTotalAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Animal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalAnimalsNumber"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalAnimalsNumber"
+        app:layout_constraintTop_toTopOf="@+id/ButtonOnHeat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

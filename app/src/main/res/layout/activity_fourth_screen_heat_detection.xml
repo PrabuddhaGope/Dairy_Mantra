@@ -48,20 +48,102 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/AnimalName"
+        android:id="@+id/Dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dates dd1 to dd2 month"
+        app:layout_constraintEnd_toEndOf="@+id/ApproximateDates"
+        app:layout_constraintStart_toStartOf="@+id/ApproximateDates"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/SensorData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor data"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/AnimalName"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/Sensor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="1 Animal Name"
-        app:layout_constraintEnd_toEndOf="@+id/AnimalHeat"
-        app:layout_constraintStart_toStartOf="@+id/AnimalHeat"
-        app:layout_constraintTop_toBottomOf="@+id/AnimalHeat" />
+        android:text="1 Sensor data"
+        app:layout_constraintStart_toStartOf="@+id/SensorData"
+        app:layout_constraintTop_toBottomOf="@+id/SensorData" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <EditText
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="189dp" />
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/Sensor1"
+        app:layout_constraintTop_toTopOf="@+id/Sensor1"
+        tools:layout_editor_absoluteX="243dp" />
+
+    <TextView
+        android:id="@+id/ObservationalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Observational Data"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Sensor1"
+        app:layout_constraintTop_toBottomOf="@+id/Sensor1" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/ObservationalData"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/AnimalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Animal name"
+        app:layout_constraintStart_toStartOf="@+id/AnimalHeat"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:id="@+id/PhotosType"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_circle"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        tools:layout_editor_absoluteX="256dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_circle"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="@+id/spinner2"
+        tools:layout_editor_absoluteX="259dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
