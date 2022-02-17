@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/tvAnimalsOnHeat"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="84dp"
         android:background="@drawable/textview_circle"
         android:gravity="center"
@@ -78,23 +78,24 @@
         android:id="@+id/tvHerdInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:text="Herd Info"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMainHeading" />
 
     <TextView
         android:id="@+id/tvTotalAnimalsNumber"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/textview_circle"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvHerdInfo"
+        app:layout_constraintStart_toStartOf="@+id/tvHerdInfo"
         app:layout_constraintTop_toBottomOf="@+id/tvHerdInfo"
         tools:text="23" />
 
@@ -229,5 +230,19 @@
         app:layout_constraintEnd_toEndOf="@+id/tvTotalAnimalsNumber"
         app:layout_constraintStart_toStartOf="@+id/tvTotalAnimalsNumber"
         app:layout_constraintTop_toTopOf="@+id/ButtonOnHeat" />
+
+    <Button
+        android:id="@+id/newAnimalbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/textview_circle"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHerdInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnimalsOnHeat"
+        app:layout_constraintStart_toStartOf="@+id/tvAnimalsOnHeat"
+        app:layout_constraintTop_toTopOf="@+id/tvHerdInfo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

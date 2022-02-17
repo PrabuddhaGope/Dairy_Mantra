@@ -10,11 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button : Button = findViewById(R.id.ButtonTotalAnimal)
+        val button : Button = findViewById(R.id.newAnimalbutton)
         button.setOnClickListener{
-            val intent = Intent(this, ThirdScreen_AnimalRegistration::class.java)
+            val intent = Intent(this, SecondScreen_BasicDetail::class.java)
             startActivity(intent)
         }
+
+
     }
 }
 
